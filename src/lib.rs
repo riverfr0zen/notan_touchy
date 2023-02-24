@@ -71,36 +71,36 @@ impl TouchState {
         }
         let touch_duration = self.ended_at - self.started_at;
         if touch_duration > 0.0 {
-            log::debug!("touch duration {}", touch_duration);
+            // log::debug!("touch duration {}", touch_duration);
             let x_diff = self.end_x - self.start_x;
             let y_diff = self.end_y - self.start_y;
-            log::debug!("xdiff {} ydiff {}", x_diff, y_diff);
+            // log::debug!("xdiff {} ydiff {}", x_diff, y_diff);
             if x_diff.abs() > y_diff.abs() {
                 if x_diff > self.swipe_threshold {
-                    log::debug!("swipe right");
+                    // log::debug!("swipe right");
                     gesture = Some(TouchGesture::SwipeRight);
                 }
                 if x_diff < -self.swipe_threshold {
-                    log::debug!("swipe left");
+                    // log::debug!("swipe left");
                     gesture = Some(TouchGesture::SwipeLeft);
                 }
             }
             if gesture.is_none() && y_diff.abs() > x_diff.abs() {
                 if y_diff > self.swipe_threshold {
-                    log::debug!("swipe down");
+                    // log::debug!("swipe down");
                     gesture = Some(TouchGesture::SwipeDown);
                 }
                 if y_diff < -self.swipe_threshold {
-                    log::debug!("swipe up");
+                    // log::debug!("swipe up");
                     gesture = Some(TouchGesture::SwipeUp);
                 }
             }
             if gesture.is_none() {
                 if touch_duration < self.tap_threshold {
-                    log::debug!("tap");
+                    // log::debug!("tap");
                     gesture = Some(TouchGesture::Tap);
                 } else if touch_duration >= self.tap_threshold {
-                    log::debug!("long tap");
+                    // log::debug!("long tap");
                     gesture = Some(TouchGesture::LongTap);
                 }
             }
