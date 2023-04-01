@@ -16,6 +16,7 @@ pub enum TouchGesture {
 
 #[derive(Debug)]
 pub struct TouchState {
+    pub touch_interface_detected: bool,
     /// The minimum distance on an axis after which the interaction is considered a swipe
     pub swipe_threshold: f32,
     /// The maximum length of a touch for an interaction to be considered a short tap
@@ -31,6 +32,7 @@ pub struct TouchState {
 impl Default for TouchState {
     fn default() -> Self {
         Self {
+            touch_interface_detected: false,
             swipe_threshold: 100.0,
             tap_threshold: 0.5,
             started_at: 0.0,
@@ -46,6 +48,7 @@ impl Default for TouchState {
 impl TouchState {
     pub fn reset(&self) -> Self {
         Self {
+            touch_interface_detected: self.touch_interface_detected,
             swipe_threshold: self.swipe_threshold,
             tap_threshold: self.tap_threshold,
             ..Default::default()
@@ -71,6 +74,8 @@ impl TouchState {
         }
         let touch_duration = self.ended_at - self.started_at;
         if touch_duration > 0.0 {
+            // log::debug!("touch interface detected");
+            self.touch_interface_detected = true;
             // log::debug!("touch duration {}", touch_duration);
             let x_diff = self.end_x - self.start_x;
             let y_diff = self.end_y - self.start_y;

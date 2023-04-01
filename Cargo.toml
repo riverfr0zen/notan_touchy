@@ -6,8 +6,8 @@ edition = "2021"
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-notan_core = "0.9.3"
-notan_log = "0.9.3"
+notan_core = "0.9.4"
+notan_log = "0.9.4"
 
 
 [dev-dependencies]
