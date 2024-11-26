@@ -363,9 +363,9 @@ checksum = "e53debba6bda7a793e5f99b8dacf19e626084f525f7829104ba9898f367d85ff"
 
 [[package]]
 name = "notan_app"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ed53f273ccfea3c7f289e48b6f13b7da96c7124fc78f225a3f0ed2e2525b99aa"
+checksum = "358681d8e47cc0a96eceb4680cd916499df36f7385b37ba5eb88bdb1a324320a"
 dependencies = [
  "bytemuck",
  "downcast-rs",
@@ -385,19 +385,18 @@ dependencies = [
 
 [[package]]
 name = "notan_core"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "fba391c0d35ad96e4c292187b2721a7e677c3d24bb0c8d2657c26931edbab25e"
+checksum = "1f71238192c12083a7cf47856b2d089ddc4b276d644655927b0bdf925921dac0"
 
 [[package]]
 name = "notan_graphics"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "347a7b0712a2821753ceb97082efb8bd03936eca29947d02593928fb88aafe7f"
+checksum = "2bfb25312b610a9f6254f3981f611cdd1dc7a141797f0fa3a7dbd50725c26987"
 dependencies = [
  "bytemuck",
  "crevice_notan",
- "log",
  "notan_macro",
  "notan_math",
  "notan_utils",
@@ -406,9 +405,9 @@ dependencies = [
 
 [[package]]
 name = "notan_input"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "877b834665f551de040d53e0fc16a78aa0ffe1d6db94b3def640736b09a1d33e"
+checksum = "8f880cd5b91e338e46c5e71cc2ad682b2b8cafc5156eb81139ddbc8e72d30956"
 dependencies = [
  "hashbrown 0.14.5",
  "log",
@@ -418,9 +417,9 @@ dependencies = [
 
 [[package]]
 name = "notan_log"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "44ebd26da10161efaf607fd60d34ce333ffa73f2339e9608321dea48ac78b1cc"
+checksum = "6a4a8acfc09d9b795368f0709841bf39855def55ce9a86dc0ace358470e0332c"
 dependencies = [
  "console_log",
  "fern",
@@ -433,9 +432,9 @@ dependencies = [
 
 [[package]]
 name = "notan_macro"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "a2604bae7f0f8a0da36302f2e9f33d837129e1f5c4677dc5b345432e4780a91c"
+checksum = "9cb3c9dd80bf395e3be25c2897aa6f436b7c5d3e90b70f8f39ace4158d0d81a2"
 dependencies = [
  "cfg_aliases",
  "num",
@@ -447,9 +446,9 @@ dependencies = [
 
 [[package]]
 name = "notan_math"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c13c3a211a3d4abcda2ba3b175932bd30a18b3b8167df5e7053573743cfa396b"
+checksum = "87ae1139aeeaef22295d6b49b53d46d13bdd7d60a5fee887b2b45b9c0de50a36"
 dependencies = [
  "glam",
 ]
@@ -464,9 +463,9 @@ dependencies = [
 
 [[package]]
 name = "notan_utils"
-version = "0.12.1"
+version = "0.11.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "abc555d444e66ef996d26c09414de20d4a7fd8df37d2bd9e54adda3e64763160"
+checksum = "6897d29590979d88da436e557c355618fd0d29d9483274bdfb04d30de697ebbf"
 dependencies = [
  "instant",
  "log",
