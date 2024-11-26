@@ -1,5 +1,5 @@
 use notan_core::events::Event;
-use notan_log as log;
+// use notan_log as log;
 
 
 #[derive(Debug)]
