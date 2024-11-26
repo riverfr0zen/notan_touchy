@@ -8,8 +8,8 @@ edition = "2021"
 [dependencies]
 #notan_core = "0.9.4"
 #notan_log = "0.9.4"
-notan_core = "0.11.0"
-notan_log = "0.11.0"
+notan_core = "0.12.1"
+notan_log = "0.12.1"
 
 
 [dev-dependencies]
